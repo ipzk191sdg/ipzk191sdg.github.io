@@ -1,0 +1,50 @@
+
+[id^=desc]{
+	display: none;
+background-color: #bd7e00;
+color: white;
+width: 100%;
+}
+[id^=d0]{
+	transition: box-shadow 1s, transform 1s, background-color 1s;
+	margin: 0 3%;
+}
+@keyframes slide-down {
+    0% { opacity: 0;  } 
+	50%{ opacity: 0.5;} 	  
+    100% { opacity: 1; }
+}
+#d01:hover> #desc01, #d02:hover> #desc02, #d03:hover> #desc03,
+#d04:hover> #desc04, #d05:hover> #desc05, #d06:hover> #desc06,
+#d07:hover> #desc07, #d08:hover> #desc08, #d09:hover> #desc09{
+	display: block;
+	animation: slide-down .3s ease-in-out;
+}
+#d01:hover, #d02:hover, #d03:hover,
+#d04:hover, #d05:hover, #d06:hover,
+#d07:hover, #d08:hover, #d09:hover {
+  box-shadow:
+    1px 1px #bd7e00,
+    2px 2px #bd7e00,
+    3px 3px #bd7e00,
+    4px 4px #bd7e00,
+    5px 5px #bd7e00,
+    6px 6px #bd7e00,
+    7px 7px #bd7e00;
+  -webkit-transform: translateX(-7px);
+  transform: translateX(-7px);
+}
+
+
+input{
+	padding-left: 5px;
+}
+
+.menu h3{
+	display: inline-block;
+	width: 90%;
+	border-bottom: 2px solid #333;
+	margin: 2% 5%;
+	font-size: 30px;
+	color: #bd7e00;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yamifood Restaurant</title>
+<link rel="stylesheet" href="media.css">
+<link rel="stylesheet" href="sass/main.css">
+</head>
+<body>
+
+<div class="navbar">
+<a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="menu.html">Menu</a>
+  <a class="active" href="contact.html">Contact</a>
+</div>
+
+<div class="about">
+<h1>CONTACT US</h1>
+</div>
+
+<div class="contact-box">
+		<h2>Contact</h2>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+<form id="contactForm">
+<input type="text"  id="name" name="name" placeholder="Your Name" pattern="[a-zA-Z]+" minlength="4" maxlength="10" required data-error="Please enter your name"><br>
+<input type="email" placeholder="Your Email" id="email" name="email" required data-error="Please enter your email"><br>
+<select id="guest" required="required" data-error="Please Select Person">
+									  <option value="" disabled selected>Please Select Person*</option>
+									  <option value="1">1</option>
+									  <option value="2">2</option>
+									  <option value="3">3</option>
+									  <option value="4">4</option>
+									  <option value="5">5</option>
+									</select><br>
+<textarea class="form-control" id="message" placeholder="Your Message" rows="4" data-error="Write your message" required></textarea><br>
+<button class="btn btn-common" id="submit" type="submit">Send Message</button>
+	</div>
+
+<div class="contact-info">
+<span><p style="font-size: 30px;">Phone</p>
+<p>+01 123-456-4590</p>
+</span>
+<span><p style="font-size: 30px;">Email</p>
+<p>yourmail@gmail.com</p></span>
+<span><p style="font-size: 30px;">Location</p>
+<p>800, Lorem Street, US</p></span>
+</div>
+
+<footer class="footer-area bg-f">
+<div class="cont">
+<div><h3>About Us</h3>
+					<p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui, at ornare turpis ultrices sit amet. Nulla cursus lorem ut nisi porta, ac eleifend arcu ultrices.</p></div>
+<div><h3>Opening hours</h3>
+					<p>Monday: Closed</p>
+					<p>Tue-Wed : 9:Am - 10PM</p>
+					<p>Thu-Fri : 9:Am - 10PM</p>
+					<p>Sat-Sun : 5:PM - 10PM</p></div>
+<div><h3>Contact information</h3>
+					<p>Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
+					<p>+01 2000 800 9999</p>
+					<p>info@admin.com</p></div>
+<div><h3>Subscribe</h3>
+					<form class="subscribe_form">
+							<input name="EMAIL" id="subs-email" placeholder="Email Address..." type="email">
+							<button type="submit" class="submit">SUBSCRIBE</button>
+						</form>
+
+						<ul class="social-med">
+						<li><a href="#"><img src="images/twitter.png" width="35px"></a></li>
+						<li><a href="#"><img src="images/twitter.png" width="35px"></a></li>
+						<li><a href="#"><img src="images/twitter.png" width="35px"></a></li>
+						<li><a href="#"><img src="images/twitter.png" width="35px"></a></li>
+						</ul>
+					</div>
+</div>
+</footer>
+</body>
+</html>

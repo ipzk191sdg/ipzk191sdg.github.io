@@ -1,0 +1,299 @@
+$base-color: #333
+$main-color: #bd7e00
+
+body 
+	margin: 0 
+.navbar 
+	display: flex 
+	flex-direction: row 
+	justify-content: flex-end 
+	align-items: center 
+	overflow: hidden 
+	background-color: $base-color 
+	position: fixed 
+	top: 0 
+	width: 100% 
+	z-index: 4 
+	a 
+		float: left 
+		color: #f2f2f2 
+		text-align: center 
+		padding: 14px 16px 
+		text-decoration: none 
+		font-size: 17px 
+		&:hover 
+			background: $main-color 
+			color: white 
+.active 
+	background-color: $main-color 
+.carousel-wrapper 
+	height: 600px 
+	position: relative 
+	width: 90% 
+	margin: 5px auto 
+.carousel-item 
+	color: white 
+	position: absolute 
+	top: 0 
+	bottom: 0 
+	left: 0 
+	right: 0 
+	padding: 25px 50px 
+	opacity: 0 
+	transition: all 0.5s ease-in-out 
+	h2 
+		margin-top: 200px 
+		font-size: 60px 
+		text-align: center 
+	p 
+		font-size: 20px 
+		text-align: center 
+		margin-top: -10px 
+		font-weight: bold 
+.arrow 
+	border: solid $base-color 
+	border-width: 0 3px 3px 0 
+	display: inline-block 
+	padding: 12px 
+.arrow-prev 
+	left: -30px 
+	position: absolute 
+	top: 50% 
+	transform: translateY(-50%) rotate(135deg) 
+.arrow-next 
+	right: -30px 
+	position: absolute 
+	top: 50% 
+	transform: translateY(-50%) rotate(-45deg) 
+.light 
+	color: white 
+[id^="item"] 
+	display: none 
+.item-1 
+	z-index: 2 
+	opacity: 1 
+	background: url('../images/slider-01.jpg') 
+	background-size: cover 
+.item-2 
+	background: url('../images/slider-02.jpg') 
+	background-size: cover 
+.item-3 
+	background: url('../images/slider-03.jpg') 
+	background-size: cover 
+*:target 
+	& ~ .item-1 
+		opacity: 0 
+#item-1 
+	&:target 
+		& ~ .item-1 
+			opacity: 1 
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 
+	z-index: 3 
+	opacity: 1 
+.grid-container 
+	display: grid 
+	grid-template-columns: 1fr 1fr 
+	grid-template-rows: 1fr 1fr 
+	grid-template-areas: "i h" "i t" 
+	* 
+		position: relative 
+	*:after 
+		position: absolute 
+		top: 0 
+		left: 0 
+.i 
+	grid-area: i 
+	img 
+		width: 500px 
+		margin-left: 10% 
+.h 
+	grid-area: h 
+	margin-right: 10% 
+	h2 
+		font-size: 40px 
+		text-align: center 
+	p 
+		text-align: center 
+		margin-top: -5% 
+		color: $main-color 
+.t 
+	grid-area: t 
+	margin-right: 10% 
+	width: 80% 
+	p 
+		font-size: 18px 
+		text-align: center 
+		margin-top: -30px 
+.contact-info 
+	width: 100% 
+	height: 100px 
+	background-color: $main-color 
+	display: flex 
+	justify-content: space-around 
+	& > span 
+		color: white 
+		width: 200px 
+		margin: -20px 60px 
+		text-align: center 
+.footer-area 
+	padding-top: 50px 
+	padding-bottom: 0px 
+.bg-f 
+	background-image: url("../images/footer-bg.jpg") 
+	background-attachment: scroll 
+	background-clip: initial 
+	background-color: rgba(0, 0, 0, 0) 
+	background-origin: initial 
+	background-position: center center 
+	background-repeat: no-repeat 
+	background-size: cover 
+	position: relative 
+	&::before 
+		background: #010101 
+		content: "" 
+		height: 100% 
+		left: 0 
+		position: absolute 
+		top: 0 
+		width: 100% 
+		z-index: 1 
+		opacity: 0.8 
+.cont 
+	filter: none 
+	display: flex 
+	justify-content: space-around 
+	position: relative 
+	z-index: 1 
+	& > div 
+		color: white 
+		width: 310px 
+		margin: 5px 50px 
+		& > h3 
+			font-size: 25px 
+			text-align: center 
+#subs-email 
+	width: 300px 
+	height: 50px 
+	background-color: $base-color 
+	border: none 
+	margin: 5px 
+	color: white 
+.submit 
+	width: 305px 
+	height: 50px 
+	margin: 5px 
+	border: none 
+	background-color: $main-color 
+	color: white 
+.social-med 
+	list-style-type: none 
+	display: flex 
+	justify-content: center 
+	& > li 
+		margin: 0 5px 
+.about 
+	width: 100% 
+	height: 310px 
+	line-height: 310px 
+	background-image: url("../images/all-bg.jpg") 
+	margin-bottom: 20px 
+	h1 
+		text-align: center 
+		color: white 
+.grid-cont 
+	height: 100% 
+	margin: 0 
+	display: grid 
+	grid-template-columns: 1fr 1fr 
+	grid-template-rows: 1fr 1fr 1fr 
+	grid-template-areas: "i1 h1" "i1 t1" "v1 v2" 
+	* 
+		position: relative 
+	*:after 
+		position: absolute 
+		top: 0 
+		left: 0 
+.i1 
+	grid-area: i1 
+	img 
+		width: 500px 
+		margin-left: 68px 
+.h1 
+	grid-area: h1 
+	margin-left: 4% 
+	h2 
+		font-size: 40px 
+		text-align: center 
+	p 
+		text-align: center 
+		margin-top: -5% 
+		color: $main-color 
+.t1 
+	grid-area: t1 
+	margin-right: 10% 
+	width: 84% 
+	p 
+		font-size: 18px 
+		text-align: center 
+		margin-top: -30px 
+.v1 
+	grid-area: v1 
+	margin-left: 68px 
+	margin-top: -60px 
+.v2 
+	grid-area: v2 
+	margin-left: 68px 
+	margin-top: -60px 
+.v1 iframe, .v2 iframe 
+	width: 500px 
+	height: 250px 
+.contact-box 
+	h2 
+		text-align: center 
+		font-size: 32px 
+	p 
+		text-align: center 
+		color: $base-color 
+		font-size: 22px 
+		margin-top: -20px 
+#contactForm input[type=text], input[type=email], select, textarea 
+	width: 70% 
+	height: 35px 
+	margin-left: 20% 
+	margin-bottom: 15px 
+	border: 1px solid #ccc 
+	border-radius: 4px 
+#contactForm 
+	textarea 
+		height: 70px 
+	button 
+		width: 35% 
+		background-color: white 
+		color: $main-color 
+		height: 35px 
+		margin-left: 39% 
+		margin-bottom: 15px 
+		border: 3px solid $main-color 
+		border-radius: 4px 
+		cursor: pointer 
+		font-size: 18px 
+		&:hover 
+			background-color: $main-color 
+			color: white 
+.drinks, .lunch, .dinner 
+	display: flex 
+	margin-bottom: 10px 
+.drinks span img, .lunch span img, .dinner span img 
+	width: 100% 
+.menu h3, .menu h2, .menu p 
+	text-align: center 
+input 
+	padding-left: 5px 
+.menu 
+	h3 
+		display: inline-block 
+		width: 90% 
+		border-bottom: 2px solid $base-color 
+		margin: 2% 5% 
+		font-size: 30px 
+		color: $main-color 

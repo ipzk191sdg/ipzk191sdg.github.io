@@ -1,0 +1,142 @@
+@media screen and (max-width: 1100px) and (min-width: 700px){
+	.carousel-item h2{
+	font-size: 40px; 
+	text-align: center;
+}
+.grid-container, .grid-cont{
+	display: flex;
+	flex-direction: column;
+}
+.i img{
+	margin-left: 15%;
+}
+.h p{
+	margin-top: -10px;
+	margin-bottom: 10px;
+}
+.t, .t1{
+	margin-top: 30px;
+	margin-right: 0;
+	width: 100%;
+}
+.contact-info{
+	height: 120px;
+}
+.cont{
+	flex-direction: column;
+}
+.i1 img{
+	width: 100%;
+	margin: 0;
+}
+.v1, .v2{
+	margin: 0 auto;
+}
+.v1 iframe, .v2 iframe{
+	width:100%; height:250px; 
+}
+.drinks, .lunch, .dinner{
+	flex-direction: column;
+}
+.drinks span img, .lunch span img, .dinner span img{
+	width: 100%;
+}
+
+#d01, #d02, #d03,
+#d04, #d05, #d06,
+#d07, #d08, #d09{
+	display: block;
+	box-shadow:
+    1px 1px #bd7e00,
+    2px 2px #bd7e00,
+    3px 3px #bd7e00,
+    4px 4px #bd7e00,
+    5px 5px #bd7e00,
+    6px 6px #bd7e00,
+    7px 7px #bd7e00;
+  -webkit-transform: translateX(-7px);
+  transform: translateX(-7px);
+  transition: box-shadow 0s, transform 0s, background-color 0s;
+}
+#desc01, #desc02, #desc03,
+#desc04, #desc05, #desc06,
+#desc07, #desc08, #desc09{
+	display: block;
+}
+}
+@media screen and (max-width: 700px) and (min-width: 200px){
+	.carousel-item h2{
+	font-size: 40px; 
+	text-align: center;
+}
+.grid-container, .grid-cont{
+	display: flex;
+	flex-direction: column;
+}
+.i img{
+	margin-left: 6%;
+	width: 430px;
+}
+.h p{
+	margin-top: -5px;
+	margin-bottom: 5px;
+}
+.t, .t1{
+	margin-top: 22px;
+	margin-right: 0;
+	width: 100%;
+}
+.contact-info{
+	flex-direction: column;
+	height: 400px;
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+}
+.contact-info > span{
+	margin: -5px 10px;
+	text-align: center;
+}
+.cont{
+	flex-direction: column;
+}
+.i1 img{
+	width: 100%;
+	margin: 0;
+}
+.v1, .v2{
+	margin: 0 auto;
+}
+.v1 iframe, .v2 iframe{
+	width:100%; height:250px; 
+}
+.drinks, .lunch, .dinner{
+	flex-direction: column;
+}
+.drinks span img, .lunch span img, .dinner span img{
+	width: 100%;
+}
+
+#d01, #d02, #d03,
+#d04, #d05, #d06,
+#d07, #d08, #d09{
+	display: block;
+	box-shadow:
+    1px 1px #bd7e00,
+    2px 2px #bd7e00,
+    3px 3px #bd7e00,
+    4px 4px #bd7e00,
+    5px 5px #bd7e00,
+    6px 6px #bd7e00,
+    7px 7px #bd7e00;
+  -webkit-transform: translateX(-7px);
+  transform: translateX(-7px);
+  transition: none;
+  animation: none;
+}
+#desc01, #desc02, #desc03,
+#desc04, #desc05, #desc06,
+#desc07, #desc08, #desc09{
+	display: block;
+}
+}
